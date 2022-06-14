@@ -14,7 +14,6 @@ function App() {
     fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWSAPI_KEY}`)
     .then(res=>res.json())
     .then(data=>{
-      // console.log(data.articles)
       setItems(data.articles)
     })
   }
