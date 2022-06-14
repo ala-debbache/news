@@ -7,7 +7,6 @@ import Items from './components/Items';
 function App() {
   const [items,setItems] = useState([])
   useEffect(()=>{
-    console.log(process.env)
     getData()
   },[])
 
